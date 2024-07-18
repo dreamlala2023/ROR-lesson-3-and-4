@@ -4,7 +4,7 @@ while answer_again == "yes" do
     puts "can you think of a number between 1 and 100?"
     lower_bound = 1
     upper_bound = 100
-    guess = rand (lower_bound..upper_bound)
+    guess = (lower_bound + upper_bound) / 2
     puts "I guess you are thinking of #{guess}."
     puts "is my guess correct or too high or too low(correct/too high/too low)?"
     answer = gets.chomp.downcase
